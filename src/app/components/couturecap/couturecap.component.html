@@ -1,12 +1,12 @@
 <div class="" style="padding-top: 15%;">
   <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item">
-      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#coupecouture" role="tab" aria-controls="home"
+      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#coupeCouture" role="tab" aria-controls="home"
         aria-selected="true">Coupe-Couture</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#dessinmode" role="tab" aria-controls="profile"
-        aria-selected="false">Dessin de Mode</a>
+      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#dessinDeMode" role="tab" aria-controls="profile"
+        aria-selected="false">Dessin de mode</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" id="contact-tab" data-toggle="tab" href="#artisanat" role="tab" aria-controls="contact"
@@ -14,98 +14,285 @@
     </li>
   </ul>
   <div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="coupecouture" role="tabpanel" aria-labelledby="home-tab">
-      <div class="card-group">
-        <div class="card">
-          <iframe width="311" height="180" src="https://www.youtube.com/embed/YZ5BJ1b4ITU" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="card-body">
-            <h5 class="card-title">Cours 1</h5>
-            <p class="card-text">Introduction sur la Coupe-Couture </p>
-            <p class="card-text"><small class="text-muted">En ligne il y'a 3 mins</small></p>
+    <div class="tab-pane fade show active" id="coupeCouture" role="tabpanel" aria-labelledby="home-tab">
+       <div *ngIf="testcours2 !== 'quit' || testcours1 !== 'ok'" class="row"> <div class="col-sm-2"></div>
+<div class="col-sm-8" style="padding-top: 5%;">
+        <div class=" d-flex border rounded p-4 mb-5 h-100 w-100" style="background-color:  #294070">
+          <img class="card-image w-50 h-100" src="./assets/params/images/logo/coupeCouture.jpg" alt="Image Siege CAIF ">
+          <div class="text-white ml-2 border-left border-1 p-1">
+            <h2 class="">Chapitre 1.Introduction</h2>
+            <p class="">Propose un minimum de 80 heures de formations : en Hygiène, cuisine, Boulangerie, Pâtisserie,
+              Couture, Coupe, Dessin,
+              Teinture, Coiffure ou Leadership etc. Des formations adaptées en fonctions de vos besoins et proposées à
+              travers tous le
+              Sénégal</p>
+              <button type="button" (click)="getCours()" class="btn btn-primary" style="margin-left: 65%;">Voir les cours</button>
+
+
           </div>
-        </div>
-        <div class="card">
-          <iframe width="311" height="180" src="https://www.youtube.com/embed/YZ5BJ1b4ITU" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="card-body">
-            <h5 class="card-title">Cours 2</h5>
-            <p class="card-text">Introduction sur la restauration</p>
-            <p class="card-text"><small class="text-muted">En ligne il y'a 3 mins</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <iframe width="311" height="180" src="https://www.youtube.com/embed/YZ5BJ1b4ITU" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="card-body">
-            <h5 class="card-title">Cours 3</h5>
-            <p class="card-text">Introduction sur la restauration</p>
-            <p class="card-text"><small class="text-muted">En ligne il y'a 3 mins</small></p>
-          </div>
+
         </div>
       </div>
-    </div>
-    <div class="tab-pane fade" id="dessinmode" role="tabpanel" aria-labelledby="profile-tab">
-      <div class="card-group">
-        <div class="card">
-          <iframe width="311" height="180" src="https://www.youtube.com/embed/YZ5BJ1b4ITU" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="card-body">
-            <h5 class="card-title">Cours 1</h5>
-            <p class="card-text">Introduction sur la Coupe-Couture</p>
-            <p class="card-text"><small class="text-muted">En ligne il y'a 3 mins</small></p>
+      <div class="col-sm-2"></div>
+       </div>
+       <div *ngIf="testcours2 !== 'quit' || testcours1 !== 'ok'"class="row"> <div class="col-sm-2"></div>
+<div class="col-sm-8" style="padding-top: 5%;">
+        <div class=" d-flex border rounded p-4 mb-5 h-100 w-100" style="background-color:  #294070">
+          <img class="card-image w-50 h-100" src="./assets/params/images/logo/coupeCouture.jpg" alt="Image Siege CAIF ">
+          <div class="text-white ml-2 border-left border-1 p-1">
+            <h2 class="">Chapitre 2.Introduction</h2>
+            <p class="">Propose un minimum de 80 heures de formations : en Hygiène, cuisine, Boulangerie, Pâtisserie,
+              Couture, Coupe, Dessin,
+              Teinture, Coiffure ou Leadership etc. Des formations adaptées en fonctions de vos besoins et proposées à
+              travers tous le
+              Sénégal</p>
+
+              <button type="button" (click)="getCours()" class="btn btn-primary" style="margin-left: 65%;">Voir les cours</button>
+
           </div>
-        </div>
-        <div class="card">
-          <iframe width="311" height="180" src="https://www.youtube.com/embed/YZ5BJ1b4ITU" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="card-body">
-            <h5 class="card-title">Cours 2</h5>
-            <p class="card-text">Introduction sur la Coupe-Couture</p>
-            <p class="card-text"><small class="text-muted">En ligne il y'a 3 mins</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <iframe width="311" height="180" src="https://www.youtube.com/embed/YZ5BJ1b4ITU" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="card-body">
-            <h5 class="card-title">Cours 3</h5>
-            <p class="card-text">Introduction sur la patisserie</p>
-            <p class="card-text"><small class="text-muted">En ligne il y'a 3 mins</small></p>
-          </div>
+
         </div>
       </div>
+      <div class="col-sm-2"></div>
+       </div>
+       <div *ngIf="testcours2 !== 'quit' || testcours1 !== 'ok'" class="row">
+         <div class="col-sm-2"></div>
+<div class="col-sm-8" style="padding-top: 5%;">
+        <div class=" d-flex border rounded p-4 mb-5 h-100 w-100" style="background-color:  #294070">
+          <img class="card-image w-50 h-100" src="./assets/params/images/logo/coupeCouture.jpg" alt="Image Siege CAIF ">
+          <div class="text-white ml-2 border-left border-1 p-1">
+            <h2 class="">Chapitre 3.Introduction</h2>
+            <p class="">Propose un minimum de 80 heures de formations : en Hygiène, cuisine, Boulangerie, Pâtisserie,
+              Couture, Coupe, Dessin,
+              Teinture, Coiffure ou Leadership etc. Des formations adaptées en fonctions de vos besoins et proposées à
+              travers tous le
+              Sénégal</p>
+
+              <button type="button" (click)="getCours()" class="btn btn-primary" style="margin-left: 65%;">Voir les cours</button>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="col-sm-2"></div>
+       </div>
+
+       <!-- Premier module Coupe Couture CAP-->
+       <div *ngIf="testcours1 == 'ok'" class="row" style="padding-top: 5%;">
+          <div class="col-sm-2"></div>
+          <div class="row col-sm-8">
+       <div class="list-group col-sm-6 h-100 w-100">
+        <button type="button" (click)="getP1()" class="list-group-item list-group-item-action ">
+          Partie 1
+        </button>
+        <button type="button" (click)="getP2()" class="list-group-item list-group-item-action">Partie 2</button>
+        <button type="button" (click)="getP3()" class="list-group-item list-group-item-action">Partie 3</button>
+        <button type="button" (click)="getP4()" class="list-group-item list-group-item-action">Partie 4</button>
+        <button type="button" (click)="getP5()" class="list-group-item list-group-item-action">Partie 5</button>
+        <a type="button" href="/couturecap" class="list-group-item list-group-item-action active">Retour au menu</a>
+      </div>
+      <!--|| part ===''-->
+      <iframe *ngIf="part === 'ok1' || part === ''"class="col-sm-6 h-100 w-100" width="311" height="180" src="https://www.youtube.com/embed/YZ5BJ1b4ITU" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe *ngIf="part === 'ok2' "class="col-sm-6 h-100 w-100" width="311" height="180" src="https://www.youtube.com/embed/dSlFdRzFHQU" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe *ngIf="part === 'ok3' "class="col-sm-6 h-100 w-100" width="311" height="180" src="https://www.youtube.com/embed/glL87dEUc7E" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe *ngIf="part === 'ok4' "class="col-sm-6 h-100 w-100" width="311" height="180" src="https://www.youtube.com/embed/DqyXkxzIjxg" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe *ngIf="part === 'ok5' "class="col-sm-6 h-100 w-100" width="311" height="180" src="https://www.youtube.com/embed/HEBzCt0a2-E" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+    <div class="col-sm-6"></div>
+  </div>
+    </div>
+
+    <!--Partie Dessin de Mode-->
+    <div class="tab-pane fade" id="dessinDeMode" role="tabpanel" aria-labelledby="profile-tab">
+      <div *ngIf="testcours21 !== 'quit' || testcours11 !== 'ok'" class="row"> <div class="col-sm-2"></div>
+      <div class="col-sm-8" style="padding-top: 5%;">
+              <div class=" d-flex border rounded p-4 mb-5 h-100 w-100" style="background-color:  #294070">
+                <img class="card-image w-50 h-100" src="./assets/params/images/logo/desseinMode.jpg" alt="Image Siege CAIF ">
+                <div class="text-white ml-2 border-left border-1 p-1">
+                  <h2 class="">Chapitre 1.Introduction</h2>
+                  <p class="">Propose un minimum de 80 heures de formations : en Hygiène, cuisine, Boulangerie, Pâtisserie,
+                    Couture, Coupe, Dessin,
+                    Teinture, Coiffure ou Leadership etc. Des formations adaptées en fonctions de vos besoins et proposées à
+                    travers tous le
+                    Sénégal</p>
+                    <button type="button" (click)="getCours1()" class="btn btn-primary" style="margin-left: 65%;">Voir les cours</button>
+      
+      
+                </div>
+      
+              </div>
+            </div>
+            <div class="col-sm-2"></div>
+             </div>
+             <div *ngIf="testcours21 !== 'quit' || testcours11 !== 'ok'"class="row"> <div class="col-sm-2"></div>
+      <div class="col-sm-8" style="padding-top: 5%;">
+              <div class=" d-flex border rounded p-4 mb-5 h-100 w-100" style="background-color:  #294070">
+                <img class="card-image w-50 h-100" src="./assets/params/images/logo/desseinMode.jpg" alt="Image Siege CAIF ">
+                <div class="text-white ml-2 border-left border-1 p-1">
+                  <h2 class="">Chapitre 2.Introduction</h2>
+                  <p class="">Propose un minimum de 80 heures de formations : en Hygiène, cuisine, Boulangerie, Pâtisserie,
+                    Couture, Coupe, Dessin,
+                    Teinture, Coiffure ou Leadership etc. Des formations adaptées en fonctions de vos besoins et proposées à
+                    travers tous le
+                    Sénégal</p>
+      
+                    <button type="button" (click)="getCours1()" class="btn btn-primary" style="margin-left: 65%;">Voir les cours</button>
+      
+                </div>
+      
+              </div>
+            </div>
+            <div class="col-sm-2"></div>
+             </div>
+             <div *ngIf="testcours21 !== 'quit' || testcours11 !== 'ok'" class="row">
+               <div class="col-sm-2"></div>
+      <div class="col-sm-8" style="padding-top: 5%;">
+              <div class=" d-flex border rounded p-4 mb-5 h-100 w-100" style="background-color:  #294070">
+                <img class="card-image w-50 h-100" src="./assets/params/images/logo/desseinMode.jpg" alt="Image Siege CAIF ">
+                <div class="text-white ml-2 border-left border-1 p-1">
+                  <h2 class="">Chapitre 3.Introduction</h2>
+                  <p class="">Propose un minimum de 80 heures de formations : en Hygiène, cuisine, Boulangerie, Pâtisserie,
+                    Couture, Coupe, Dessin,
+                    Teinture, Coiffure ou Leadership etc. Des formations adaptées en fonctions de vos besoins et proposées à
+                    travers tous le
+                    Sénégal</p>
+      
+                    <button type="button" (click)="getCours1()" class="btn btn-primary" style="margin-left: 65%;">Voir les cours</button>
+      
+                </div>
+      
+              </div>
+            </div>
+            <div class="col-sm-2"></div>
+             </div>
+
+             <!--Module Dessin de Mode-->
+             <div *ngIf="testcours11 == 'ok'" class="row" style="padding-top: 5%;">
+                <div class="col-sm-2"></div>
+                <div class="row col-sm-8">
+             <div class="list-group col-sm-6 h-100 w-100">
+              <button type="button" (click)="getP11()" class="list-group-item list-group-item-action ">
+                Partie 1
+              </button>
+              <button type="button" (click)="getP21()" class="list-group-item list-group-item-action">Partie 2</button>
+              <button type="button" (click)="getP31()" class="list-group-item list-group-item-action">Partie 3</button>
+              <button type="button" (click)="getP41()" class="list-group-item list-group-item-action">Partie 4</button>
+              <button type="button" (click)="getP51()" class="list-group-item list-group-item-action">Partie 5</button>
+              <a type="button" href="/couturecap" class="list-group-item list-group-item-action active">Retour au menu</a>
+            </div>
+            <!--|| part ===''-->
+            <iframe *ngIf="part1 === 'ok1' || part1 === ''"class="col-sm-6 h-100 w-100" width="311" height="180" src="https://www.youtube.com/embed/YZ5BJ1b4ITU" frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe *ngIf="part1 === 'ok2' "class="col-sm-6 h-100 w-100" width="311" height="180" src="https://www.youtube.com/embed/dSlFdRzFHQU" frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe *ngIf="part1 === 'ok3' "class="col-sm-6 h-100 w-100" width="311" height="180" src="https://www.youtube.com/embed/glL87dEUc7E" frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe *ngIf="part1 === 'ok4' "class="col-sm-6 h-100 w-100" width="311" height="180" src="https://www.youtube.com/embed/DqyXkxzIjxg" frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe *ngIf="part1 === 'ok5' "class="col-sm-6 h-100 w-100" width="311" height="180" src="https://www.youtube.com/embed/HEBzCt0a2-E" frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="col-sm-6"></div>
+        </div>
+    </div>
+
+    <!--Partie Artisanat-->
     <div class="tab-pane fade" id="artisanat" role="tabpanel" aria-labelledby="contact-tab">
-      <div class="card-group">
-        <div class="card">
-          <iframe width="311" height="180" src="https://www.youtube.com/embed/YZ5BJ1b4ITU" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="card-body">
-            <h5 class="card-title">Cours 1</h5>
-            <p class="card-text">Introduction au Service-Bar </p>
-            <p class="card-text"><small class="text-muted">En ligne il y'a 3 mins</small></p>
+      <div *ngIf="testcours22 !== 'quit' || testcours12 !== 'ok'" class="row"> <div class="col-sm-2"></div>
+      <div class="col-sm-8" style="padding-top: 5%;">
+              <div class=" d-flex border rounded p-4 mb-5 h-100 w-100" style="background-color:  #294070">
+                <img class="card-image w-50 h-100" src="./assets/params/images/logo/artisanat.jpg" alt="Image Siege CAIF ">
+                <div class="text-white ml-2 border-left border-1 p-1">
+                  <h2 class="">Chapitre 1.Introduction</h2>
+                  <p class="">Propose un minimum de 80 heures de formations : en Hygiène, cuisine, Boulangerie, Pâtisserie,
+                    Couture, Coupe, Dessin,
+                    Teinture, Coiffure ou Leadership etc. Des formations adaptées en fonctions de vos besoins et proposées à
+                    travers tous le
+                    Sénégal</p>
+                    <button type="button" (click)="getCours2()" class="btn btn-primary" style="margin-left: 65%;">Voir les cours</button>
+      
+      
+                </div>
+      
+              </div>
+            </div>
+            <div class="col-sm-2"></div>
+             </div>
+             <div *ngIf="testcours22 !== 'quit' || testcours12 !== 'ok'"class="row"> <div class="col-sm-2"></div>
+      <div class="col-sm-8" style="padding-top: 5%;">
+              <div class=" d-flex border rounded p-4 mb-5 h-100 w-100" style="background-color:  #294070">
+                <img class="card-image w-50 h-100" src="./assets/params/images/logo/artisanat.jpg" alt="Image Siege CAIF ">
+                <div class="text-white ml-2 border-left border-1 p-1">
+                  <h2 class="">Chapitre 2.Introduction</h2>
+                  <p class="">Propose un minimum de 80 heures de formations : en Hygiène, cuisine, Boulangerie, Pâtisserie,
+                    Couture, Coupe, Dessin,
+                    Teinture, Coiffure ou Leadership etc. Des formations adaptées en fonctions de vos besoins et proposées à
+                    travers tous le
+                    Sénégal</p>
+      
+                    <button type="button" (click)="getCours2()" class="btn btn-primary" style="margin-left: 65%;">Voir les cours</button>
+      
+                </div>
+      
+              </div>
+            </div>
+            <div class="col-sm-2"></div>
+             </div>
+             <div *ngIf="testcours22 !== 'quit' || testcours12 !== 'ok'" class="row">
+               <div class="col-sm-2"></div>
+      <div class="col-sm-8" style="padding-top: 5%;">
+              <div class=" d-flex border rounded p-4 mb-5 h-100 w-100" style="background-color:  #294070">
+                <img class="card-image w-50 h-100" src="./assets/params/images/logo/artisanat.jpg" alt="Image Siege CAIF ">
+                <div class="text-white ml-2 border-left border-1 p-1">
+                  <h2 class="">Chapitre 3.Introduction</h2>
+                  <p class="">Propose un minimum de 80 heures de formations : en Hygiène, cuisine, Boulangerie, Pâtisserie,
+                    Couture, Coupe, Dessin,
+                    Teinture, Coiffure ou Leadership etc. Des formations adaptées en fonctions de vos besoins et proposées à
+                    travers tous le
+                    Sénégal</p>
+      
+                    <button type="button" (click)="getCours2()" class="btn btn-primary" style="margin-left: 65%;">Voir les cours</button>
+      
+                </div>
+      
+              </div>
+            </div>
+            <div class="col-sm-2"></div>
+             </div>
+
+             <!--Module Artisanat-->
+             <div *ngIf="testcours12 == 'ok'" class="row" style="padding-top: 5%;">
+                <div class="col-sm-2"></div>
+                <div class="row col-sm-8">
+             <div class="list-group col-sm-6 h-100 w-100">
+              <button type="button" (click)="getP12()" class="list-group-item list-group-item-action ">
+                Partie 1
+              </button>
+              <button type="button" (click)="getP22()" class="list-group-item list-group-item-action">Partie 2</button>
+              <button type="button" (click)="getP32()" class="list-group-item list-group-item-action">Partie 3</button>
+              <button type="button" (click)="getP42()" class="list-group-item list-group-item-action">Partie 4</button>
+              <button type="button" (click)="getP52()" class="list-group-item list-group-item-action">Partie 5</button>
+              <a type="button" href="/couturecap" class="list-group-item list-group-item-action active">Retour au menu</a>
+            </div>
+            <!--|| part ===''-->
+            <iframe *ngIf="part2 === 'ok1' || part2 === ''"class="col-sm-6 h-100 w-100" width="311" height="180" src="https://www.youtube.com/embed/YZ5BJ1b4ITU" frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe *ngIf="part2 === 'ok2' "class="col-sm-6 h-100 w-100" width="311" height="180" src="https://www.youtube.com/embed/dSlFdRzFHQU" frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe *ngIf="part2 === 'ok3' "class="col-sm-6 h-100 w-100" width="311" height="180" src="https://www.youtube.com/embed/glL87dEUc7E" frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe *ngIf="part2 === 'ok4' "class="col-sm-6 h-100 w-100" width="311" height="180" src="https://www.youtube.com/embed/DqyXkxzIjxg" frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe *ngIf="part2 === 'ok5' "class="col-sm-6 h-100 w-100" width="311" height="180" src="https://www.youtube.com/embed/HEBzCt0a2-E" frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
+          <div class="col-sm-6"></div>
         </div>
-        <div class="card">
-          <iframe width="311" height="180" src="https://www.youtube.com/embed/YZ5BJ1b4ITU" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="card-body">
-            <h5 class="card-title">Cours 2</h5>
-            <p class="card-text">Introduction au Service-Bar</p>
-            <p class="card-text"><small class="text-muted">En ligne il y'a 3 mins</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <iframe width="311" height="180" src="https://www.youtube.com/embed/YZ5BJ1b4ITU" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="card-body">
-            <h5 class="card-title">Cours 3</h5>
-            <p class="card-text">Introduction au Service-Bar</p>
-            <p class="card-text"><small class="text-muted">En ligne il y'a 3 mins</small></p>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </div>
